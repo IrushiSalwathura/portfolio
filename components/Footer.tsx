@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <>
       <div
-        className="h-[40rem] rounded-md bg-black flex flex-col items-center justify-center relative w-full"
-        id="contacts"
+        className="h-screen bg-black flex flex-col items-center justify-center relative w-full"
+        id="contactMe"
       >
-        <h2 className="relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 p-10">
+        <h2 className="relative flex-col md:flex-row z-10 text-4xl md:text-5xl md:leading-tight max-w-5xl mx-auto mt-60 text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 p-10">
           Contact Me!
         </h2>
         <div className="relative flex-col md:flex-row z-10 md:leading-tight text-center tracking-tight bg-clip-text text-transparent flex items-center gap-2 md:gap-8 ">
@@ -73,6 +73,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <p className="text-yellow-400 text-sm sm:text-base font-mono mt-auto text-center mb-2">
+          © 2025 Irushi Salwathura All rights reserved.
+        </p>
         <ShootingStars />
         <StarsBackground />
       </div>

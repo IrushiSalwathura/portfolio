@@ -8,16 +8,18 @@ import ArtGallery from "@/components/ArtGallery";
 export default function Home() {
   return (
     <>
-    {/* <main className="relative bg-yellow-200 flex flex-col overflow-hidden"> */}
+      {/* <main className="relative bg-yellow-200 flex flex-col overflow-hidden"> */}
       {/* <div className="mt-24 w-full mx-auto"> */}
-        <Navbar />
+      <Navbar />
+      <section className="bg-[url(/background.png)]">
         <Hero />
         <About />
         <Projects />
         <ArtGallery />
-        <Footer />
+      </section>
+      <Footer />
       {/* </div> */}
-    {/* </main> */}
+      {/* </main> */}
     </>
   );
 }

@@ -1,6 +1,9 @@
 "use client";
 
-import { ArrowLeftCircleIcon, ArrowRightCircleIcon } from "@heroicons/react/24/solid";
+import {
+  ArrowLeftCircleIcon,
+  ArrowRightCircleIcon,
+} from "@heroicons/react/24/solid";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -25,7 +28,9 @@ export const AnimatedTestimonials = ({
 
   useEffect(() => {
     setMounted(true);
-    setRandomRotation(testimonials.map(() => Math.floor(Math.random() * 21) - 10));
+    setRandomRotation(
+      testimonials.map(() => Math.floor(Math.random() * 21) - 10)
+    );
   }, [testimonials]);
 
   const handleNext = () => {
@@ -65,7 +70,8 @@ export const AnimatedTestimonials = ({
                     scale: active === index ? 1 : 0.95,
                     z: active === index ? 0 : -100,
                     rotate: active === index ? 0 : randomRotation[index] || 0,
-                    zIndex: active === index ? 999 : testimonials.length + 2 - index,
+                    zIndex:
+                      active === index ? 999 : testimonials.length + 2 - index,
                     y: active === index ? [0, -80, 0] : 0,
                   }}
                   exit={{
@@ -107,13 +113,17 @@ export const AnimatedTestimonials = ({
             <p className="text-sm text-gray-500 dark:text-neutral-500">
               {testimonials[active].designation}
             </p>
-            <motion.p className="text-lg text-black-200 mt-8 dark:text-neutral-300">
+            <motion.p className="text-sm md:text-base xl:text-lg text-black-200 mt-8 dark:text-neutral-300">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
                   initial={{ filter: "blur(10px)", opacity: 0, y: 5 }}
                   animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
-                  transition={{ duration: 0.2, ease: "easeInOut", delay: 0.02 * index }}
+                  transition={{
+                    duration: 0.2,
+                    ease: "easeInOut",
+                    delay: 0.02 * index,
+                  }}
                   className="inline-block"
                 >
                   {word}&nbsp;
