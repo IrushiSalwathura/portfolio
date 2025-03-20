@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="text-center md:w-1/2 md:text-left md:mb-0 mb-10">
           <h1 className="mb-4 text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-extrabold">
             {/* <span className='text-transparent bg-clip-text bg-gradient-to-tr from-pink-300 to-rose-950'>Hello I'm{" "}</span> */}
-            <span>Hello I&aposm </span>
+            <span>{"Hello I'm"}</span>
             <br></br>
             <TypeAnimation
               sequence={[
