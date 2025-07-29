@@ -52,9 +52,9 @@ const About = () => {
         <div className="mt-4 md:mt-0 text-left h-full flex-1 sm:order-2">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
           <p className="text-sm md:text-base xl:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Node. js, HTML, CSS, and Git. I am a
+            I am a full stack developer with a passion for creating
+            interactive and responsive applications. I have experience
+            working with Java, Spring boot, JavaScript, React, Node. js, HTML, CSS, and Git. I am a
             quick learner and I am always looking to expand my knowledge and
             skill set. I am a team player and I am excited to work with others
             to create amazing applications.

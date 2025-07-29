@@ -59,18 +59,6 @@ const Footer = () => {
                 @artbyirushi
               </a>
             </div>
-
-            <div className="flex items-center space-x-2">
-              <AiFillInstagram className="h-5 w-5 text-yellow-500" />
-              <a
-                href="https://www.instagram.com/__irushi___?igsh=d2l0ZzBjeWhkZjky"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-yellow-300 transition-colors"
-              >
-                @__irushi__
-              </a>
-            </div>
           </div>
         </div>
         <p className="text-yellow-400 text-sm sm:text-base font-mono mt-auto text-center mb-2">
