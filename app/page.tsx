@@ -12,8 +12,12 @@ export default function Home() {
     const [loading, setLoading] = useState<boolean>(true);
   
     useEffect(() => {
-      const timer = setTimeout(() => setLoading(false), 2000); // Simulated load
-      return () => clearTimeout(timer);
+      const img = new Image();
+      img.src = "/background.png";
+  
+      img.onload = () => {
+        setLoading(false);
+      };
     }, []);
 
   return (
